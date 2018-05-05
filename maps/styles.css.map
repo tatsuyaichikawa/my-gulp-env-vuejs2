@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA;EACE,YAAY;CACb;;AAED;EACE,WAAW;CACZ","file":"../src/styles.css","sourcesContent":["#app {\n  color: blue;\n}\n\n#app {\n  color: red;\n}\n"]}

@@ -23,7 +23,8 @@ gulp.task('sass', function() {
           cascade: false
       }))
       .pipe(sourcemaps.write('../maps'))
-      .pipe(gulp.dest('./dist'));
+      .pipe(gulp.dest('./dist'))
+      .pipe(sync.stream());
 });
 
 // js
@@ -34,7 +35,8 @@ gulp.task('build', function() {
         .bundle()
         .pipe(plumber())
         .pipe(source('./dist/app.js'))
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./'))
+        // .pipe(sync.reload());
 });
 
 // BrowserSyncの設定
